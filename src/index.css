@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Material Design 3 (M3) System Tokens & Utilities */
+:root {
+  --md-sys-color-primary: #0b57d0;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #d3e3fd;
+  --md-sys-color-on-primary-container: #041e49;
+  --md-sys-color-secondary: #00639b;
+  --md-sys-color-secondary-container: #c2e7ff;
+  --md-sys-color-on-secondary-container: #001d35;
+  --md-sys-color-tertiary: #6750a4;
+  --md-sys-color-tertiary-container: #e8def8;
+  --md-sys-color-surface: #f8f9fc;
+  --md-sys-color-surface-dim: #dadce0;
+  --md-sys-color-surface-container: #ecf0f6;
+  --md-sys-color-surface-container-low: #f2f5f9;
+  --md-sys-color-surface-container-high: #e6ebf2;
+  --md-sys-color-on-surface: #191c20;
+  --md-sys-color-on-surface-variant: #44474e;
+  --md-sys-color-outline: #74777f;
+  --md-sys-color-outline-variant: #c4c7cf;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix duplicate native date/time picker indicator icons across all browsers */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0 !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: pointer !important;
+}
+
+input[type="date"],
+input[type="time"] {
+  position: relative;
+}
+

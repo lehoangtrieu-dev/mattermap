@@ -1,0 +1,6 @@
+{
+  "name": "MatterMap",
+  "description": "A real-time co-traveler and adaptive trip planner that renegotiates itineraries on the fly using live weather, multimodal vision crowd checks, voice signals, and Gemini reasoning.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

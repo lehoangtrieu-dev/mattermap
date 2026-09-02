@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "Trip": {
+      "title": "Saved Trip Plan",
+      "description": "A customized itinerary saved by an authenticated user containing days, stops, geolocations, and OSM verification data.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Google Auth UID of the owner"
+        },
+        "destinationName": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "City or destination name"
+        },
+        "destinationLat": {
+          "type": "number",
+          "description": "Latitude of the destination"
+        },
+        "destinationLng": {
+          "type": "number",
+          "description": "Longitude of the destination"
+        },
+        "startDate": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Starting date string or ISO date"
+        },
+        "daysCount": {
+          "type": "number",
+          "description": "Total duration in days"
+        },
+        "days": {
+          "type": "array",
+          "description": "List of itinerary days containing stop items"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated timestamp"
+        }
+      },
+      "required": ["userId", "destinationName", "destinationLat", "destinationLng", "daysCount", "days", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/trips/{tripId}": {
+      "schema": "Trip",
+      "description": "User specific collection of saved travel itineraries"
+    }
+  }
+}
