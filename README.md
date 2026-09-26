@@ -1,6 +1,6 @@
 # ![MatterMap](https://i.ibb.co/2x0yJYW/Matter-Map.jpg)
-**A live, adaptive travel itinerary planner.** 
-*Built for AI Riser Vietnam 2026: #BuildwithGoogleAI*
+**A live, adaptive travel itinerary planner.**
+*Ranked Top 50 at AI Riser Vietnam 2026: #BuildwithGoogleAI*
 
 <p align="center">
   <a href="https://mattermap.ai.studio"><b>🌐 Try Live App</b></a> &nbsp;&bull;&nbsp;
@@ -47,3 +47,7 @@ MatterMap reacts to reality. Instead of relying on AI guesses, it grounds your i
 Built by Ben, Bill, Tele, and Troy. 
 
 First created at the AI Riser Vietnam Hands-On Workshop (1st Place, Lotus Hack), and developed further for AI Riser Vietnam 2026.
+
+🏆 **Top 50 — AI Riser Vietnam 2026**
+
+<img src="https://i.ibb.co/6cntWcyW/certificate.png" alt="AI Riser Vietnam 2026 - Top 50 Certificate">
