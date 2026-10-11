@@ -1,4 +1,4 @@
-# ![MatterMap](https://i.ibb.co/2x0yJYW/Matter-Map.jpg)
+# ![MatterMap](assets/banner.webp)
 **A live, adaptive travel itinerary planner.**
 *Ranked Top 50 at AI Riser Vietnam 2026: #BuildwithGoogleAI*
 
